@@ -17,11 +17,11 @@
 # Posting a app_id and a app_secret
 - Use POSTMAN or application manager to assign new users app ID and password to the database.
 POST http://localhost/apps/
-```{
+`{
   "app-id": "my_company_id",
   "app_secret" : "my_company_pass"
-}```
-This will assign the users keys to the app.app
+}`
+- This will assign the users keys to the app.app
 
 # To connect to the mongo db
-sudo docker exec -it pets-api_web_run_1 mongo --host mongodb
+- sudo docker exec -it pets-api_web_run_1 mongo --host mongodb
