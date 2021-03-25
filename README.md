@@ -14,8 +14,11 @@
 # To run tests
 - Find the docker web container name and run: `docker exec -it petsapi_web_1 python tests.py`
 
-# Posting a app_id and a app_secret
+# Posting an app_id and an app_secret
 - Use POSTMAN or application manager to assign new users app ID and password to the database.
+If you are using the --service-ports option the docker container end number will increment each time you
+launch!
+
 POST http://localhost/apps/
 `{
   "app-id": "my_company_id",
