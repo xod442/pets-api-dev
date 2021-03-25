@@ -10,14 +10,15 @@
 
 # To access mongodb
 - Find the docker web container name and run: `docker exec -it petsapi_db_1 mongo`
+- If you are using the --service-ports option the docker container end number will increment each time you
+launch!
 
 # To run tests
 - Find the docker web container name and run: `docker exec -it petsapi_web_1 python tests.py`
 
 # Posting an app_id and an app_secret
 - Use POSTMAN or application manager to assign new users app ID and password to the database.
-If you are using the --service-ports option the docker container end number will increment each time you
-launch!
+
 
 POST http://localhost/apps/
 `{
